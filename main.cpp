@@ -7,7 +7,7 @@ void testDraw(){
     Deck deck;
     deck.populate(0,0);
     deck.shuffle();
-    std::cout << deck.takeCard().toString() << std::endl;
+    std::cout << deck.drawCard().toString() << std::endl;
 }
 
 void testPrintAll(){
@@ -16,7 +16,7 @@ void testPrintAll(){
     deck.populate(0,0);
     int numCards = deck.getNumCards();
     for (int i = numCards - 1; i >= 0; i--){
-        std::cout << deck.takeCard().toString() << std::endl;
+        std::cout << deck.drawCard().toString() << std::endl;
     }
 }
 
@@ -26,7 +26,7 @@ void testPrintShortWithJoker(){
     deck.populate(4,3);
     int numCards = deck.getNumCards();
     for (int i = numCards - 1; i >= 0; i--){
-        std::cout << deck.takeCard().toString() << std::endl;
+        std::cout << deck.drawCard().toString() << std::endl;
     }
 }
 
@@ -37,7 +37,7 @@ void testPrintShuffle(){
     deck.shuffle();
     int numCards = deck.getNumCards();
     for (int i = numCards - 1; i >= 0; i--){
-        std::cout << deck.takeCard().toString() << std::endl;
+        std::cout << deck.drawCard().toString() << std::endl;
     }
 }
 

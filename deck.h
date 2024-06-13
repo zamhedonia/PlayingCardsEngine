@@ -10,7 +10,7 @@ public:
     Deck();
     int getNumCards() const;
     void populate(int shorten, int jokers);
-    Card takeCard();
+    Card drawCard();
     void addCard(Card card);
     void shuffle();
     virtual ~Deck();

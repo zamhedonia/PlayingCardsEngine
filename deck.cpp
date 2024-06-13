@@ -46,7 +46,7 @@ void Deck::populate(int shorten, int jokers){
 }
 
 // Take card from the back of the vector
-Card Deck::takeCard(){
+Card Deck::drawCard(){
     Card card = deck.back();
     deck.pop_back();
     return card;
